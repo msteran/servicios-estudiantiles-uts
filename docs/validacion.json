@@ -1,0 +1,7 @@
+{
+  "lint": "0 errores y 6 advertencias: cinco de versiones más recientes de dependencias y una sobre reglas de extracción de datos en Android 12+",
+  "android": "Android 17 / API 37",
+  "repository": "Repositorio privado en GitHub: https://github.com/msteran/servicios-estudiantiles-uts. El propietario debe dar acceso al profesor para que pueda consultarlo.",
+  "unitTests": 11,
+  "deviceTests": 2
+}

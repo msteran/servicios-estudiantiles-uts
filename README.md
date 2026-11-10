@@ -93,6 +93,10 @@ Si la lectura falla, se informa y se bloquea la escritura para no sobrescribir l
 
 El PDF de sustentación explica decisiones, estructura, demostración y resultados comprobados. Repositorio privado: https://github.com/msteran/servicios-estudiantiles-uts. Para que el profesor pueda abrirlo, el propietario debe darle acceso o decidir hacerlo público desde GitHub.
 
+La guía se encuentra en [docs/Guia_Sustentacion_Mi_UTS.pdf](docs/Guia_Sustentacion_Mi_UTS.pdf). Se verificaron **11 pruebas unitarias y 2 instrumentadas**, además de lint (0 errores, 6 advertencias). Las capturas de las tres pantallas están en `docs/evidencias/`. Se comprobó también que el perfil y la matrícula permanecen después de detener y volver a abrir el proceso.
+
+La ejecución de pruebas mediante Gradle puede desinstalar la aplicación al terminar. Para conservar capturas y datos de demostración, se reinstalaron los APK de app y pruebas y se ejecutó directamente `adb shell am instrument -w co.edu.uts.servicios.test/androidx.test.runner.AndroidJUnitRunner`. Ese recorrido también pasó. El emulador entregado contiene únicamente el ejemplo ficticio Ana Torres y una matrícula de $105.000.
+
 - Enunciado suministrado: *Miniproyecto Final: Sistema Integrado de Servicios Estudiantiles UTS*, dos páginas.
 - [Recomendaciones oficiales de arquitectura Android](https://developer.android.com/topic/architecture/recommendations)
 - [Estado en Jetpack Compose](https://developer.android.com/develop/ui/compose/state)
